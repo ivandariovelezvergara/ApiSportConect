@@ -1,0 +1,680 @@
+[
+  {
+    "ContainingType": "APISportConnect.Controllers.AppObjectController",
+    "Method": "GetAllObject",
+    "RelativePath": "api/AppObject",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.AppObjectController",
+    "Method": "CreateAppObjectAsync",
+    "RelativePath": "api/AppObject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "Entity.Service.Security.AppObjectRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.AppObjectController",
+    "Method": "GetObjectById",
+    "RelativePath": "api/AppObject/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.AppObjectController",
+    "Method": "UpdateAppObjectAsync",
+    "RelativePath": "api/AppObject/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "obj",
+        "Type": "Entity.Service.Security.AppObjectRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.AppObjectController",
+    "Method": "DeleteAppObjectAsync",
+    "RelativePath": "api/AppObject/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.OAuthController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/OAuth/ForgotPassword/{email}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.OAuthController",
+    "Method": "Login",
+    "RelativePath": "api/OAuth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Entity.Service.User.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.OAuthController",
+    "Method": "LoginSettings",
+    "RelativePath": "api/OAuth/LoginSettings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Entity.Service.User.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.OAuthController",
+    "Method": "Refresh",
+    "RelativePath": "api/OAuth/RefreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Entity.Service.User.RefreshRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.OAuthController",
+    "Method": "ResendVerificationCode",
+    "RelativePath": "api/OAuth/ResendVerificationCode/{email}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.ParameterController",
+    "Method": "AddParameterDetail",
+    "RelativePath": "api/Parameter/AddParameterDetail/{masterId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "masterId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newParameter",
+        "Type": "Entity.Service.Master.MasterParameterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.ParameterController",
+    "Method": "CreateParameter",
+    "RelativePath": "api/Parameter/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "master",
+        "Type": "Entity.Service.Master.MasterTableRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.ParameterController",
+    "Method": "DeleteParameterDetail",
+    "RelativePath": "api/Parameter/DeleteParameterDetail/{masterId}/{parameterId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "masterId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "parameterId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.ParameterController",
+    "Method": "GetAllParameter",
+    "RelativePath": "api/Parameter/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.ParameterController",
+    "Method": "GetParametersDetailId",
+    "RelativePath": "api/Parameter/GetParametersDetailId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.ParameterController",
+    "Method": "GetParametersDetailName",
+    "RelativePath": "api/Parameter/GetParametersDetailNameAsync/{masterName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "masterName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.ParameterController",
+    "Method": "UpdateParameterDetail",
+    "RelativePath": "api/Parameter/UpdateParameterDetail/{masterId}/{parameterId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "masterId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "parameterId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newParameter",
+        "Type": "Entity.Service.Master.MasterParameterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.RoleController",
+    "Method": "GetAllRoles",
+    "RelativePath": "api/Role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.RoleController",
+    "Method": "CreateRole",
+    "RelativePath": "api/Role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "Entity.Service.Security.RoleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.RoleController",
+    "Method": "GetRoleById",
+    "RelativePath": "api/Role/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.RoleController",
+    "Method": "UpdateRole",
+    "RelativePath": "api/Role/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "Entity.Service.Security.RoleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.RoleController",
+    "Method": "DeleteRole",
+    "RelativePath": "api/Role/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "AddEvaluation",
+    "RelativePath": "api/Sport/AddEvaluation/{id}/{type}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newEvaluation",
+        "Type": "Entity.Service.Sport.EvaluationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "AddPosition",
+    "RelativePath": "api/Sport/AddPosition/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newPosition",
+        "Type": "Entity.Service.Sport.PositionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "AddCategory",
+    "RelativePath": "api/Sport/AddSportCategory/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newCategory",
+        "Type": "Entity.Service.Sport.CategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "Create",
+    "RelativePath": "api/Sport/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sport",
+        "Type": "Entity.Service.Sport.SportInformationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "Deletecategory",
+    "RelativePath": "api/Sport/Deletecategory/{id}/{categoryId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "categoryId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "DeleteEvaluation",
+    "RelativePath": "api/Sport/DeleteEvaluation/{id}/{type}/{evaluationId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "evaluationId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "DeletePosition",
+    "RelativePath": "api/Sport/DeletePosition/{id}/{positionId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "positionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "GetAll",
+    "RelativePath": "api/Sport/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "GetDetailId",
+    "RelativePath": "api/Sport/GetDetailId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "GetDetailName",
+    "RelativePath": "api/Sport/GetDetailName/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/Sport/UpdateCategory/{id}/{categoryId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "categoryId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newCategory",
+        "Type": "Entity.Service.Sport.CategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "UpdateEvaluation",
+    "RelativePath": "api/Sport/UpdateEvaluation/{id}/{type}/{evaluationId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "evaluationId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newEvaluation",
+        "Type": "Entity.Service.Sport.EvaluationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "UpdatePosition",
+    "RelativePath": "api/Sport/UpdatePosition/{id}/{positionId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "positionId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "newPosition",
+        "Type": "Entity.Service.Sport.PositionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.SportController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/Sport/UpdateStatus/{id}/{status}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.UserController",
+    "Method": "CreateUserAsync",
+    "RelativePath": "api/User/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Entity.Service.User.CreateUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

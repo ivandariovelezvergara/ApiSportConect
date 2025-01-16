@@ -1,0 +1,15 @@
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\bin\Release\net8.0\DSportConnect.deps.json
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\bin\Release\net8.0\DSportConnect.dll
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\bin\Release\net8.0\DSportConnect.pdb
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\bin\Release\net8.0\Entity.dll
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\bin\Release\net8.0\Entity.pdb
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\obj\Release\net8.0\DSportConnect.csproj.AssemblyReference.cache
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\obj\Release\net8.0\DSportConnect.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\obj\Release\net8.0\DSportConnect.AssemblyInfoInputs.cache
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\obj\Release\net8.0\DSportConnect.AssemblyInfo.cs
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\obj\Release\net8.0\DSportConnect.csproj.CoreCompileInputs.cache
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\obj\Release\net8.0\DSportCo.66A29E97.Up2Date
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\obj\Release\net8.0\DSportConnect.dll
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\obj\Release\net8.0\refint\DSportConnect.dll
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\obj\Release\net8.0\DSportConnect.pdb
+C:\ProyectoFutbol\ApiInterna\APISportConnect\DSportConnect\obj\Release\net8.0\ref\DSportConnect.dll

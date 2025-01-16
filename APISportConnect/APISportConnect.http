@@ -1,0 +1,6 @@
+@APISportConnect_HostAddress = http://localhost:5198
+
+GET {{APISportConnect_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
