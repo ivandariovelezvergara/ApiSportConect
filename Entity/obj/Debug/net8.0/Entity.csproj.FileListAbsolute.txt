@@ -1,0 +1,13 @@
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\bin\Debug\net8.0\Entity.deps.json
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\bin\Debug\net8.0\Entity.dll
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\bin\Debug\net8.0\Entity.pdb
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\obj\Debug\net8.0\Entity.csproj.AssemblyReference.cache
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\obj\Debug\net8.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\obj\Debug\net8.0\Entity.AssemblyInfoInputs.cache
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\obj\Debug\net8.0\Entity.AssemblyInfo.cs
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\obj\Debug\net8.0\Entity.csproj.CoreCompileInputs.cache
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\obj\Debug\net8.0\Entity.sourcelink.json
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\obj\Debug\net8.0\Entity.dll
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\obj\Debug\net8.0\refint\Entity.dll
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\obj\Debug\net8.0\Entity.pdb
+C:\ProyectoFutbol\ApiInterna\APISportConnect\Entity\obj\Debug\net8.0\ref\Entity.dll

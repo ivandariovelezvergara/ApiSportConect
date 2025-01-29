@@ -300,5 +300,57 @@ namespace APISportConnect.Controllers
             }
         }
         #endregion
+
+        #region ConfirmAccount
+        [HttpPost("ConfirmAccount")]
+        public async Task<IActionResult> ConfirmAccount([FromBody] ConfirmAccountRequest request)
+        {
+            try
+            {
+                var response = await _informationService.ConfirmAccountAsync(request.Email, request.CodeVerified);
+                if (response.IsError)
+                {
+                    return StatusCode(response.IdStaus, response);
+                }
+
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new BaseResponse
+                {
+                    IdStaus = 500,
+                    Message = $"Ocurrió un error: {ex.Message}",
+                    IsError = true
+                });
+            }
+        }
+        #endregion
+
+        #region RetrieveEmail
+        [HttpPost("RetrieveEmail")]
+        public async Task<IActionResult> RetrieveEmail([FromBody] RetrieveEmailRequest request)
+        {
+            try
+            {
+                var response = await _informationService.RetrieveEmailByDocumentNumberAsync(request.DocumentNumber);
+                if (response.IsError)
+                {
+                    return StatusCode(response.IdStaus, response);
+                }
+
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new BaseResponse
+                {
+                    IdStaus = 500,
+                    Message = $"Ocurrió un error: {ex.Message}",
+                    IsError = true
+                });
+            }
+        }
+        #endregion
     }
 }

@@ -160,5 +160,102 @@ namespace BSportConect.User.Service
             };
         }
         #endregion
+
+        #region ConfirmAccountAsync
+        public async Task<BaseResponse> ConfirmAccountAsync(string email, string codeVerified)
+        {
+            var user = await _repository.GetUserPasswordAsync(new LoginRequest { Username = email });
+            if (user == null)
+            {
+                return new BaseResponse
+                {
+                    IdStaus = 404,
+                    Message = "Usuario no encontrado.",
+                    IsError = true
+                };
+            }
+
+            if (user.CodeVerified != codeVerified)
+            {
+                return new BaseResponse
+                {
+                    IdStaus = 400,
+                    Message = "El código de verificación no es válido.",
+                    IsError = true
+                };
+            }
+
+            if (user.EmailVerified)
+            {
+                return new BaseResponse
+                {
+                    IdStaus = 400,
+                    Message = "El correo ya fue verificado previamente.",
+                    IsError = true
+                };
+            }
+
+            user.EmailVerified = true;
+            user.CodeVerified = null; // Eliminar el código de verificación
+            await _repository.UpdateUserAsync(user.Id.ToString(), user);
+
+            return new BaseResponse
+            {
+                IdStaus = 200,
+                Message = "Correo electrónico verificado con éxito.",
+                IsError = false
+            };
+        }
+        #endregion
+
+        #region RetrieveEmailByDocumentNumberAsync
+        public async Task<BaseResponse> RetrieveEmailByDocumentNumberAsync(string documentNumber)
+        {
+            // Buscar usuario por número de documento
+            var user = await _repository.GetUserByDocumentNumberAsync(documentNumber);
+            if (user == null)
+            {
+                return new BaseResponse
+                {
+                    IdStaus = 404,
+                    Message = "No se encontró un usuario con este número de documento.",
+                    IsError = true
+                };
+            }
+
+            // Enmascarar el email
+            string maskedEmail = MaskEmail(user.Mail);
+
+            // Retornar el email enmascarado
+            return new BaseResponse
+            {
+                IdStaus = 200,
+                Message = maskedEmail,
+                IsError = false
+            };
+        }
+
+        // Método para enmascarar el email
+        private string MaskEmail(string email)
+        {
+            var emailParts = email.Split('@');
+            var localPart = emailParts[0];
+            var domainPart = emailParts[1];
+
+            // Si el local part es muy corto, enmascarar solo el segundo carácter
+            if (localPart.Length <= 3)
+            {
+                return $"{localPart[0]}*{localPart[^1]}@{domainPart}";
+            }
+
+            // Enmascarar parcialmente el local part dejando los primeros 2 y últimos 2 caracteres visibles
+            var visibleStart = localPart.Substring(0, 2);
+            var visibleEnd = localPart.Substring(localPart.Length - 2);
+            var maskedMiddle = new string('*', localPart.Length - 4);
+
+            return $"{visibleStart}{maskedMiddle}{visibleEnd}@{domainPart}";
+        }
+
+        #endregion
     }
 }

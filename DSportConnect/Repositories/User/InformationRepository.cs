@@ -99,5 +99,12 @@ namespace DSportConnect.Repositories.User
             await _userCollection.ReplaceOneAsync(r => r.Id == _user.Id, _user);
         }
         #endregion
+
+        #region GetUserByDocumentNumberAsync
+        public async Task<UserInformation> GetUserByDocumentNumberAsync(string documentNumber)
+        {
+            return await _userCollection.Find(u => u.PersonalInformation.DocumentNumber == documentNumber).FirstOrDefaultAsync();
+        }
+        #endregion
     }
 }

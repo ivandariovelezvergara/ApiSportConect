@@ -80,6 +80,22 @@
   },
   {
     "ContainingType": "APISportConnect.Controllers.OAuthController",
+    "Method": "ConfirmAccount",
+    "RelativePath": "api/OAuth/ConfirmAccount",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSportConnect.Models.User.ConfirmAccountRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.OAuthController",
     "Method": "ForgotPassword",
     "RelativePath": "api/OAuth/ForgotPassword/{email}",
     "HttpMethod": "POST",
@@ -153,6 +169,22 @@
       {
         "Name": "email",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APISportConnect.Controllers.OAuthController",
+    "Method": "RetrieveEmail",
+    "RelativePath": "api/OAuth/RetrieveEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSportConnect.Models.User.RetrieveEmailRequest",
         "IsRequired": true
       }
     ],

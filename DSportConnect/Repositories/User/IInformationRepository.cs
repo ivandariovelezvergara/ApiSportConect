@@ -10,5 +10,6 @@ namespace DSportConnect.Repositories.User
         Task<bool> UserExistsAsync(CreateUserRequest user);
         Task<UserInformation> GetUserPasswordAsync(LoginRequest loginRequest);
         Task ForgotPasswordAsync(string username, string newPassword);
+        Task<UserInformation> GetUserByDocumentNumberAsync(string documentNumber);
     }
 }

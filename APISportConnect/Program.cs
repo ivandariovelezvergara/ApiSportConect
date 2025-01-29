@@ -132,17 +132,18 @@ builder.Services.AddSwaggerGen(options =>
 // Habilita CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy("AllowAllOriginsWithCredentials", policy =>
     {
-        policy.AllowAnyOrigin()  
-              .AllowAnyMethod()  
-              .AllowAnyHeader(); 
+        policy.SetIsOriginAllowed(origin => true) 
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials(); 
     });
 });
 
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
-app.UseCors("AllowAll");
+app.UseCors("AllowAllOriginsWithCredentials");
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
